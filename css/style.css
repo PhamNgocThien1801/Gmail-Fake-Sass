@@ -37,16 +37,13 @@ body {
   font-size: 1rem;
   margin: 0rem auto 0rem auto;
 }
-.navbar .option .first-option {
-  margin-top: 1.125rem;
-  background-color: #d3e3fd;
-  border-radius: 35%;
-  width: 2.75rem;
-  height: 1.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.navbar .option li p {
+  padding-left: 0rem;
+  color: #1f1f1f;
+  font-weight: 500;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  margin: 0.375rem 0rem 0.375rem 0rem;
 }
 .navbar .option .first-option i {
   margin-top: 1.125rem;
@@ -71,6 +68,14 @@ body {
   border: 0.125rem solid #b3261e;
   border-radius: 1.25rem;
 }
+.navbar .option .first-option p {
+  padding-left: 0rem;
+  color: #1f1f1f;
+  font-weight: 500;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  margin: 0.375rem 0rem 0.375rem 0rem;
+}
 .navbar .option .option-content i {
   border-radius: 35%;
   width: 2.75rem;
@@ -83,17 +88,17 @@ body {
 .navbar .option .option-content i:hover {
   background-color: #EAEBEF;
 }
-.navbar .option i {
-  font-size: 1rem;
-  margin: 0rem auto 0rem auto;
-}
-.navbar .option p {
+.navbar .option .option-content p {
   padding-left: 0rem;
   color: #1f1f1f;
   font-weight: 500;
   line-height: 1rem;
   font-size: 0.75rem;
   margin: 0.375rem 0rem 0.375rem 0rem;
+}
+.navbar .option i {
+  font-size: 1rem;
+  margin: 0rem auto 0rem auto;
 }
 
 .right-content {

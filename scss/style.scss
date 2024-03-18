@@ -37,24 +37,21 @@ body {
             text-align: center;
             .hamberger-button {
                 font-size: 1.375rem;
-
             }
             i {
                 font-size: 1rem;
                 margin: 0rem auto 0rem auto;
             }
-            
+            p {
+                padding-left: 0rem;
+                color: #1f1f1f;
+                font-weight: 500;
+                line-height: 1rem;
+                font-size: 0.75rem;
+                margin: 0.375rem 0rem 0.375rem 0rem;
+            } 
         }
         .first-option {
-            margin-top: 1.125rem;
-            background-color: #d3e3fd;
-            border-radius: 35%;
-            width: 2.75rem;
-            height: 1.875rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
             i {
                 margin-top: 1.125rem;
                 background-color: #d3e3fd;
@@ -78,6 +75,14 @@ body {
                         border-radius: 1.25rem;  
                 }
             }
+            p {
+                padding-left: 0rem;
+                color: #1f1f1f;
+                font-weight: 500;
+                line-height: 1rem;
+                font-size: 0.75rem;
+                margin: 0.375rem 0rem 0.375rem 0rem;
+            }
         }
         .option-content {
             i {
@@ -92,19 +97,20 @@ body {
                     background-color: #EAEBEF;
                 }
             }
+            p {
+                padding-left: 0rem;
+                color: #1f1f1f;
+                font-weight: 500;
+                line-height: 1rem;
+                font-size: 0.75rem;
+                margin: 0.375rem 0rem 0.375rem 0rem;
+            }
         }
         i {
             font-size: 1rem;
             margin: 0rem auto 0rem auto;
         }
-        p {
-            padding-left: 0rem;
-            color: #1f1f1f;
-            font-weight: 500;
-            line-height: 1rem;
-            font-size: 0.75rem;
-            margin: 0.375rem 0rem 0.375rem 0rem;
-        }
+       
     }
 }
 .right-content {
@@ -175,7 +181,7 @@ body {
                     button {
                         margin: 0 0.5rem ;
                         padding: 0.5rem 1rem;
-                        border-radius: 5px;
+                        border-radius: 0.313rem;
                         border: #e1e5e9 solid 1px;
                         background-color: #fff;
                         font-size: 0.813rem;
@@ -219,7 +225,7 @@ body {
                 width: 30%;
                 height: 100%;
                 min-width: 5.125rem;
-                margin: auto 0rem auto 5px;
+                margin: auto 0rem auto 0.313rem;
                 display: flex;
                 justify-content: end;
                 position: relative; 
@@ -248,7 +254,7 @@ body {
                     width: 150%;
                     background-color: #fff;
                     z-index: 1;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     padding: 0.625rem 0;
                     p {
                         margin: 0;
@@ -290,8 +296,8 @@ body {
                     }
                     .status-action {
                         display: flex;
-                        height: 40px;
-                        padding: 0px 1rem;
+                        height: 2.5rem;
+                        padding: 0 1rem;
                         align-items: center;
                         border-top: #e1e5e9 solid 1px;
                         border-bottom: #e1e5e9 solid 1px;
@@ -303,7 +309,7 @@ body {
                         }
                     }
                     .describe {
-                        font-size: 12px;
+                        font-size: 0.75rem;
                         color: #AEB0AF;
                     }
                 }  
@@ -322,7 +328,7 @@ body {
                         list-style: none;
                         width: 2.5rem;
                         height: 2.5rem;
-                        margin: 0rem 5px 0rem 5px;
+                        margin: 0rem 0.313rem 0rem 0.313rem;
                         font-size: 1.25rem;
                         color: gray;
                         position: relative;
@@ -386,13 +392,13 @@ body {
                     z-index: 1;
                     background-color: #dde0e6;
                     width: 300%;
-                    padding: 0px 1rem;
-                    border-radius: 20px;
+                    padding: 0 1rem;
+                    border-radius: 1.25rem;
                     z-index: 2;
                     .name-user {
                         .user-infomation {
                             .popover-top {
-                                padding-top: 18px;
+                                padding-top: 10.5rem;
                                 p {
                                     margin: 0;
                                     font-size: 0.875rem;
@@ -405,13 +411,13 @@ body {
                             .popover-bottom {
                                 text-align: center;
                                 p {
-                                    margin: 8px 0px;
+                                    margin: 0.5rem 0;
                                 }
                                 button {
-                                    margin: 1px 0px 18px 0px;
+                                    margin: 1px 0 10.5rem 0;
                                     background-color: #dde0e6;
-                                    padding: 9px 23px;
-                                    border-radius: 100px;
+                                    padding: 0.563rem 1.438rem;
+                                    border-radius: 6.25rem;
                                     border: 1px solid #747775;
                                     color: #0b57d0;
                                     font-size: 0.875rem;
@@ -420,9 +426,9 @@ body {
                                     }
                                 }
                                 .avatar-user {
-                                    height: 80px;
-                                    width: 80px;
-                                    margin-top: 22px;
+                                    height: 5rem;
+                                    width: 5rem;
+                                    margin-top: 1.375rem;
                                 }
                             }
                         }
@@ -431,19 +437,19 @@ body {
                         display: flex;
                         .add-account {
                             width: 50%;
-                            height: 58px;
-                            padding: 0px 15px;
-                            margin: 0px 1px;
+                            height: 3.625rem;
+                            padding: 0 0.938rem;
+                            margin: 0 1px;
                             background-color: #fff;
                             display: flex;
                             align-items: center;
-                            border-radius: 100px 0px 0px 100px;
+                            border-radius: 6.25rem 0 0 6.25rem;
                             i {
                                 font-size: 1rem;
-                                padding: 5px; 
+                                padding: 0.313rem; 
                             }
                             p {
-                                margin-left: 8px;
+                                margin-left: 0.5rem;
                             }
                             &:hover {
                                 background-color: #bebebe;
@@ -455,19 +461,19 @@ body {
                         }
                         .sign-out {
                             width: 50%;
-                            height: 58px;
-                            padding: 0px 15px;
-                            margin: 0px 1px;
+                            height: 3.625rem;
+                            padding: 0 0.938rem;
+                            margin: 0 1px;
                             background-color: #fff;
                             display: flex;
                             align-items: center;
-                            border-radius: 0px 100px 100px 0px;
+                            border-radius: 0 6.25rem 6.25rem 0;
                             i {
                                 font-size: 1rem;
-                                padding: 5px; 
+                                padding: 0.313rem; 
                             }
                             p {
-                                margin-left: 8px;
+                                margin-left: 0.5rem;
                             }
                             &:hover {
                                 background-color: #bebebe;
@@ -481,9 +487,9 @@ body {
                         width: 100%;
                         .add-account {
                             width: 50%;
-                            height: 58px;
-                            padding: 0px 15px;
-                            margin: 0px 1px;
+                            height: 3.625rem;
+                            padding: 0 0.938rem;
+                            margin: 0 1px;
                             display: flex;
                             align-items: center; 
                             justify-content: end;
@@ -491,9 +497,9 @@ body {
                         }
                         .sign-out {
                             width: 50%;
-                            height: 58px;
-                            padding: 0px 15px;
-                            margin: 0px 1px;
+                            height: 3.625rem;
+                            padding: 0 0.938rem;
+                            margin: 0 1px;
                             display: flex;
                             align-items: center; 
                         }
@@ -513,7 +519,7 @@ body {
         display: flex;
         .navbar-content {
             width: 20%;
-            min-width: 256px;
+            min-width: 16rem;
             height: auto;
             button {
                 height: 3.5rem;
@@ -556,8 +562,8 @@ body {
                         left: 100%;
                         background-color: #444746;
                         padding: 4px;
-                        border-radius: 5px;
-                        font-size: 12px;
+                        border-radius: 0.313rem;
+                        font-size: 0.75rem;
                         color: #fff;
                         visibility: hidden;
                     }
@@ -588,8 +594,8 @@ body {
                 border-radius: 1.25rem 1.25rem 0rem 0rem;
                 background-color: #fff;
                 input {
-                    width: 14px;
-                    height: 14px;
+                    width: 0.875rem;
+                    height: 0.875rem;
                     margin: 0rem 2px 0rem 0.625rem;
                 }
                 button {
@@ -624,10 +630,10 @@ body {
                             font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
                             position: absolute;
                             background-color: #444746;
-                            font-size: 14px;
-                            padding: 5px 8px;
+                            font-size: 0.875rem;
+                            padding: 0.313rem 0.5rem;
                             color: #fff;
-                            border-radius: 5px;
+                            border-radius: 0.313rem;
                             top: 19%;
                             right: 3%;
                             visibility: hidden;
@@ -636,14 +642,14 @@ body {
                     
                 }
                 .scrooll-icon {
-                    padding: 10px 4px;
-                    margin-right: 14px;
+                    padding: 0.625rem 4px;
+                    margin-right: 0.875rem;
                     position: relative;
                     font-size: 0.625rem;
                     margin-right: 1.875rem;
                     &:hover {
                         background-color: #F2F2F2;
-                        border-radius: 5px;
+                        border-radius: 0.313rem;
                         .text-tooltip {
                             visibility: visible;
                         }
@@ -651,8 +657,8 @@ body {
                 }
                 .arrow-icon {
                     border-radius: 50%;
-                    padding: 8px;
-                    margin-right: 14px;
+                    padding: 0.5rem;
+                    margin-right: 0.875rem;
                     position: relative;
                     font-size: 0.875rem;
                     color: #444746;
@@ -666,7 +672,7 @@ body {
                 }
                 .vertical-icon {
                     border-radius: 50%;
-                    padding: 8px 14px;
+                    padding: 0.5rem 0.875rem;
                     position: relative;
                     &:hover {
                         background-color: #F2F2F2;
@@ -677,7 +683,7 @@ body {
                 }
                 .pagination {
                     padding: 2px 1rem;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     position: relative;
                     margin: 0rem 0.313rem 0rem auto;    
                     font-size: 0.75rem;
@@ -698,10 +704,10 @@ body {
                         visibility: hidden;
                         z-index: 1;
                         p {
-                            margin: 0px;
-                            height: 40px;
+                            margin: 0;
+                            height: 2.5rem;
                             display: flex;
-                            margin: auto 0px;
+                            margin: auto 0;
                             align-items: center;
                             justify-content: center;
                             &:hover {
@@ -719,10 +725,10 @@ body {
                     right: 0%; 
                     top: 100%; 
                     background-color: #444746;
-                    font-size: 14px;
-                    padding: 5px 8px;
+                    font-size: 0.875rem;
+                    padding: 0.313rem 0.5rem;
                     color: #fff;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     visibility: hidden;
                 }
             }
@@ -744,7 +750,7 @@ body {
                         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                         strong {
                             visibility: hidden;
-                            width: 0px;
+                            width: 0;
                         }
                         .option-email-content {
                             i {
@@ -789,7 +795,7 @@ body {
                             justify-content: center;
                             position: relative;
                             visibility: hidden;
-                            width: 0px;
+                            width: 0;
                             &:hover {
                                 background-color: #EAEBEF;
                             }
