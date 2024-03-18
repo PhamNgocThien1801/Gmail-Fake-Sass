@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gmail Fake FlexBox</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans|Roboto|RobotoDraft|Helvetica|Arial|sans-serif">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet" />
+    </head>
+    <body>
+     
+        <!-- navbar -->
+        <div class="navbar">
+            <ul class="option">
+                <!-- hamberger button -->
+                <li>
+                    <input type="checkbox" id="hamberger-checkbox">
+                    <label class="hamberger-label" for="hamberger-checkbox">
+                        <i class="fa-solid fa-bars hamberger-button"></i>
+                    </label>
+                </li>
+                <!-- Mail button -->
+                <li class="first-option"><i class="fa-solid fa-envelope"><div><span>99+</span></div></i><p>Mail</p></li>
+                <!-- Chat button -->
+                <li class="option-content"><i class="fa-regular fa-message"></i><p>Chat</p></li>
+                <!-- Meet button -->
+                <li class="option-content"><i class="fa-solid fa-video"></i><p>Meet</p></li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <!-- searchbar -->
+            <div class="search-bar">
+                <!-- logo -->
+                <div class="logo">
+                    <!-- img -->
+                    <img src="./images/logo-gmail.png" alt="logo" />
+                </div>
+                <!-- searchbar -->
+                <div class="search-box">
+                    <!-- search box -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search in emails"/>
+                    <!-- table search -->
+                    <div class="table-search">
+                        <div class="top-content">
+                            <button>Has attachment</button>
+                            <button>Last 7 days</button>
+                            <button>From me</button>
+                        </div>
+                        <div class="bottom-content">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- option -->
+                <div class="option">
+                    <!-- status -->
+                    <div class="status-active">
+                        <!-- satus active -->
+                        <input type="checkbox" id="toggleStatus" >
+                        <button>
+                            <label class="toggleStatus" for="toggleStatus">
+                                <i class="fa-solid fa-circle"></i>Active <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </button>
+                        <!-- popover satus content -->
+                        <div class="status-content">
+                            <div class="status-option">
+                                <i class="fa-solid fa-circle circle-icon"></i>
+                                <div class="status-option-content">
+                                    <p>Automatic</p>
+                                    <p class="describe">Based on chat activity</p>
+                                </div>
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </div>
+                            <div class="status-option">
+                                <i class="fa-solid fa-ban ban-icon"></i>
+                                <div class="status-option-content">
+                                    <p>Do not disturb</p>
+                                    <p class="describe">Mute chat notifications</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-option">
+                                <i class="fa-regular fa-circle away-icon"></i>
+                                <div class="status-option-content">
+                                    <p class="describe">Set at Away</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-action">
+                                <i class="fa-solid fa-pen pen-icon"></i>
+                                <div class="status-option-content">
+                                    <p class="describe">Add a Status</p>
+                                </div>
+                            </div>
+                            <div class="status-option">
+                                <div class="status-option-content">
+                                    <p class="describe-action">Chat notification settings</p>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option -->
+                    <div class="option-content">
+                        <ul>
+                            <!-- option content -->
+                            <li><i class="fa-regular fa-circle-question"></i><span class="tooltiptext">Support</span></li>
+                            <!-- option content -->
+                            <li><i class="fa-solid fa-gear"></i><span class="tooltiptext">Settings</span></li>
+                            <!-- option content -->
+                            <li><i class="fa-solid fa-list"></i><span class="tooltiptext">Google apps</span></li>
+                        </ul>
+                    </div>
+                    <!-- avartar -->
+                    <div class="avatar">
+                        <!-- img -->
+                        <img class="logo-fpt"src="./images/logo-fpt.png" alt="logo-fpt"/>
+                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar"/>
+                        <!-- popover -->
+                        <div class="popover" id="avatarPopover">
+                            <div class="name-user">
+                                <div class="user-infomation">
+                                    <div class="top-popover">
+                                        <div class="popover-top">
+                                                <p>thienpnse150137@fpt.edu.vn</p>
+                                                <p class="managed">Managed by fpt.edu.vn</p>
+                                        </div>
+                                    </div>
+                                    <div class="popover-bottom">
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar"/>
+                                        <p>Hi, Pham Ngoc Thien!</p>
+                                        <button>Manage your Google accounts</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-account">
+                                <div class="add-account"><i class="fa-solid fa-plus"></i><p>add-account</p></div>
+                                <div class="sign-out"><i class="fa-solid fa-arrow-right-from-bracket"></i><p>sign-out</p></div>
+                            </div>
+                            <div class="policy">
+                                <div class="add-account"><p>Privacy policy</p></div>
+                                .
+                                <div class="sign-out"><p>Terms of service</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="content">
+                <!-- navbar content -->
+                <div class="navbar-content" id="navbar-content">
+                    <button><i class="fa-solid fa-pen"></i> Compose</button>
+                    <ul>
+                        <li><i class="fa-solid fa-inbox"></i> Inbox <strong>194</strong><div class="text-tooltip">inbox</div></li>
+                        <li><i class="fa-regular fa-star"></i>Starred <div class="text-tooltip">Starred</div></li>
+                        <li><i class="fa-regular fa-clock"></i>Snoozed <div class="text-tooltip">Snoozed</div></li>
+                        <li><i class="fa-regular fa-paper-plane"></i>Sent <div class="text-tooltip">Sent</div></li>
+                        <li><i class="fa-regular fa-note-sticky"></i>Drafts <div class="text-tooltip">Drafts</div></li>
+                        <li><i class="fa-solid fa-angle-down"></i></i>More</li>
+                    </ul>
+                    <!-- label -->
+                    <div class="label">
+                        <p>Labels</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <!-- email content -->
+                <div class="email-content">
+                    <div class="email-option">
+                        <input type="checkbox" class="check-box">
+                        <i class="fa-solid fa-caret-down scrooll-icon">
+                            <div class="text-tooltip">Select</div>
+                        </i>
+                        <i class="fa-solid fa-arrow-rotate-right arrow-icon">
+                            <div class="text-tooltip">Refresh</div>
+                        </i>
+                        <i class="fa-solid fa-ellipsis-vertical vertical-icon">
+                            <div class="text-tooltip">More</div>
+                        </i>
+                        <div class="pagination"><p>1-50 of 1.932</p>
+                            <div class="pagination-option">
+                                <p class="newest-text">Newest</p>
+                                <p>Oldest</p>
+                            </div>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-chevron-left left-icon">
+                                <div class="text-tooltip-pagination">Newer</div>
+                            </i>
+                        </button>
+                        <button class="right-icon">
+                            <i class="fa-solid fa-chevron-right">
+                                <div class="text-tooltip-pagination">Older</div>
+                            </i>
+                        </button>
+                    </div>
+                    <ul>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <div class="email-footer"><p class="using-memory">Using 0.5GB</p> <div><p>Programme Policies</p><p>Powered by Google</p></div> <div><p class="details">Last account activity: 13 hours ago</p><p class="details">Details</p></div></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+    <footer>
+    </footer>
+</html>
