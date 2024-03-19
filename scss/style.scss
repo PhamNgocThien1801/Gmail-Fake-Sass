@@ -6,7 +6,18 @@ $borderColor: #e1e5e9;
 $hoverColor: #E8EAED;
 $popoverColor: #dde0e6;
 $iconColor: #444746;
-
+$textColor: #1f1f1f;
+$hoverAccountColor: #bebebe;
+$notiColor: #b3261e;
+$iconHoverColor: #EAEBEF;
+$iconBackgroundColor: #d3e3fd;
+$inputBackgroundColor: #EAF1FB;
+$liHoverColor: #F2F6FC;
+$greyColor: #AEB0AF;
+html {
+    width: 100%;
+    height: 100%;
+}
 body {
     display: flex;
     margin: 0rem;
@@ -15,8 +26,7 @@ body {
     height: 100%;
     overflow: hidden;
     margin-right: 1rem;
-}
-.navbar {
+    .navbar {
     width: 5%;
     min-width: 4.25rem;
     height: auto;
@@ -44,7 +54,7 @@ body {
             }
             p {
                 padding-left: 0rem;
-                color: #1f1f1f;
+                color: $textColor;
                 font-weight: 500;
                 line-height: 1rem;
                 font-size: 0.75rem;
@@ -54,7 +64,7 @@ body {
         .first-option {
             i {
                 margin-top: 1.125rem;
-                background-color: #d3e3fd;
+                background-color: $iconBackgroundColor;
                 border-radius: 35%;
                 width: 2.75rem;
                 height: 1.875rem;
@@ -63,21 +73,21 @@ body {
                 justify-content: center;
                 position: relative;
                 .noti {
-                        background-color: #b3261e;
-                        position: absolute;
-                        bottom: 1rem;
-                        left: 1.375rem;
-                        font-size: 0.688rem;
-                        color:#fff;
-                        padding: 0.063rem 0.25rem;
-                        font-family: Google Sans;
-                        border : 0.125rem solid #b3261e;
-                        border-radius: 1.25rem;  
+                    background-color: $notiColor;
+                    position: absolute;
+                    bottom: 1rem;
+                    left: 1.375rem;
+                    font-size: 0.688rem;
+                    color: $whiteColor;
+                    padding: 0.063rem 0.25rem;
+                    font-family: Google Sans;
+                    border : 0.125rem solid $notiColor;
+                    border-radius: 1.25rem;  
                 }
             }
             p {
                 padding-left: 0rem;
-                color: #1f1f1f;
+                color: $textColor;
                 font-weight: 500;
                 line-height: 1rem;
                 font-size: 0.75rem;
@@ -94,12 +104,12 @@ body {
                 justify-content: center;
                 position: relative;
                 &:hover {
-                    background-color: #EAEBEF;
+                    background-color: $iconHoverColor;
                 }
             }
             p {
                 padding-left: 0rem;
-                color: #1f1f1f;
+                color: $textColor;
                 font-weight: 500;
                 line-height: 1rem;
                 font-size: 0.75rem;
@@ -148,9 +158,9 @@ body {
                 padding: 0 1.25rem 0 2.813rem;
                 border: none;
                 border-radius: 1.25rem;
-                background-color: #EAF1FB;
+                background-color: $inputBackgroundColor;
                 &:focus {
-                    background-color: #fff;
+                    background-color:  $whiteColor;
                     outline: none;
                     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                     border-radius: 1.25rem 1.25rem 0 0;     
@@ -163,7 +173,7 @@ body {
                 }
             }
             .table-search {
-                background-color: #fff;
+                background-color:  $whiteColor;
                 position: absolute;
                 width: 100%;
                 top: 100%;
@@ -176,14 +186,14 @@ body {
                     display: flex;
                     align-items: center;
                     margin: auto 0;
-                    border-top: #e1e5e9 solid 1px;
-                    border-bottom: #e1e5e9 solid 1px;
+                    border-top: $borderColor solid 1px;
+                    border-bottom: $borderColor solid 1px;
                     button {
                         margin: 0 0.5rem ;
                         padding: 0.5rem 1rem;
                         border-radius: 0.313rem;
-                        border: #e1e5e9 solid 1px;
-                        background-color: #fff;
+                        border: $borderColor solid 1px;
+                        background-color:  $whiteColor;
                         font-size: 0.813rem;
                         &:hover {
                             background-color: #e7eaee;
@@ -200,7 +210,7 @@ body {
                             padding: 0.5rem;
                             border-left: white solid 2px;
                             &:hover {
-                                background-color: #F2F6FC;
+                                background-color: $liHoverColor;
                                 border-left: rgb(103, 103, 235) solid 2px;
                             }
                             .avatar-user {
@@ -228,7 +238,16 @@ body {
                 margin: auto 0rem auto 0.313rem;
                 display: flex;
                 justify-content: end;
-                position: relative; 
+                position: relative;
+                #toggleStatus {
+                    display: none;
+                    &:checked ~ .status-content {
+                        display: block;
+                    }
+                    &:not(:checked) ~ .status-content {
+                        display: none;
+                    }
+                }
                 button {
                     height: 100%;
                     border-radius: 1.563rem;
@@ -236,7 +255,7 @@ body {
                     background-color: #E4ECF8;
                     margin-top: 0rem;
                     &:hover {
-                        background-color: #EAF1FB;
+                        background-color: $inputBackgroundColor;
                     }
                     i:first-child {
                         color: green;
@@ -252,7 +271,7 @@ body {
                     top: 100%;
                     left: 50%;
                     width: 150%;
-                    background-color: #fff;
+                    background-color:  $whiteColor;
                     z-index: 1;
                     border-radius: 0.313rem;
                     padding: 0.625rem 0;
@@ -268,8 +287,8 @@ body {
                         height: 3.125rem;
                         padding: 0 1rem;
                         &:hover {
-                            background-color: #E8EAED;
-                            border-bottom: #444746;
+                            background-color: $hoverColor;
+                            border-bottom: $iconColor;
                         }
                         i {
                             align-items: center;
@@ -299,18 +318,18 @@ body {
                         height: 2.5rem;
                         padding: 0 1rem;
                         align-items: center;
-                        border-top: #e1e5e9 solid 1px;
-                        border-bottom: #e1e5e9 solid 1px;
+                        border-top: $borderColor solid 1px;
+                        border-bottom: $borderColor solid 1px;
                         .pen-icon {
                             margin-right: 1rem;
                         }
                         &:hover {
-                            background-color: #E8EAED;
+                            background-color: $hoverColor;
                         }
                     }
                     .describe {
                         font-size: 0.75rem;
-                        color: #AEB0AF;
+                        color: $greyColor;
                     }
                 }  
                 
@@ -336,7 +355,7 @@ body {
                             padding: 0.5rem;
                             border-radius: 50%;
                             &:hover {
-                                background-color: #E8EAED;
+                                background-color: $hoverColor;
                                 .tooltiptext {
                                     visibility: visible;
                                 }
@@ -345,8 +364,8 @@ body {
                         .tooltiptext {
                             visibility: hidden;
                             position: absolute;
-                            background-color: #444746;
-                            color: #fff;    
+                            background-color: $iconColor;
+                            color:  $whiteColor;    
                             padding: 0.125rem 0.625rem;
                             border-radius: 0.313rem;
                             z-index: 1;
@@ -390,7 +409,7 @@ body {
                     right: 0%;
                     top: 130%;
                     z-index: 1;
-                    background-color: #dde0e6;
+                    background-color: $popoverColor;
                     width: 300%;
                     padding: 0 1rem;
                     border-radius: 1.25rem;
@@ -398,7 +417,7 @@ body {
                     .name-user {
                         .user-infomation {
                             .popover-top {
-                                padding-top: 10.5rem;
+                                padding-top: 1.2rem;
                                 p {
                                     margin: 0;
                                     font-size: 0.875rem;
@@ -414,8 +433,8 @@ body {
                                     margin: 0.5rem 0;
                                 }
                                 button {
-                                    margin: 1px 0 10.5rem 0;
-                                    background-color: #dde0e6;
+                                    margin: 1px 0 1rem 0;
+                                    background-color: $popoverColor;
                                     padding: 0.563rem 1.438rem;
                                     border-radius: 6.25rem;
                                     border: 1px solid #747775;
@@ -440,7 +459,7 @@ body {
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
-                            background-color: #fff;
+                            background-color:  $whiteColor;
                             display: flex;
                             align-items: center;
                             border-radius: 6.25rem 0 0 6.25rem;
@@ -452,9 +471,9 @@ body {
                                 margin-left: 0.5rem;
                             }
                             &:hover {
-                                background-color: #bebebe;
+                                background-color: $hoverAccountColor;
                                 i {
-                                    background-color: #fff;
+                                    background-color:  $whiteColor;
                                     border-radius: 50%;
                                 }
                             }
@@ -464,7 +483,7 @@ body {
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
-                            background-color: #fff;
+                            background-color:  $whiteColor;
                             display: flex;
                             align-items: center;
                             border-radius: 0 6.25rem 6.25rem 0;
@@ -476,7 +495,7 @@ body {
                                 margin-left: 0.5rem;
                             }
                             &:hover {
-                                background-color: #bebebe;
+                                background-color: $hoverAccountColor;
                             }
                         }
                     }
@@ -545,7 +564,7 @@ body {
                     align-items: center;
                     position: relative;
                     &:hover {
-                        background-color: #EAEBEF;
+                        background-color: $iconHoverColor;
                         .text-tooltip {
                             visibility: visible;
                         }
@@ -560,16 +579,16 @@ body {
                     .text-tooltip {
                         position: absolute;
                         left: 100%;
-                        background-color: #444746;
+                        background-color: $iconColor;
                         padding: 4px;
                         border-radius: 0.313rem;
                         font-size: 0.75rem;
-                        color: #fff;
+                        color:  $whiteColor;
                         visibility: hidden;
                     }
                 }
                 li:first-child {
-                    background-color: #D3E3FD;
+                    background-color: $iconBackgroundColor;
                 }
             }
             .label {
@@ -585,6 +604,7 @@ body {
         .email-content {
             flex-grow: 1;
             width: 80%;
+            padding-left: 0.5rem;
             .email-option {
                 margin: 0rem;
                 height: 1.25rem;
@@ -592,7 +612,7 @@ body {
                 display: flex;
                 align-items: center;
                 border-radius: 1.25rem 1.25rem 0rem 0rem;
-                background-color: #fff;
+                background-color:  $whiteColor;
                 input {
                     width: 0.875rem;
                     height: 0.875rem;
@@ -603,12 +623,12 @@ body {
                     width: 2rem;
                     height: 2rem;
                     border: none;
-                    background-color: #fff;
-                    color: #AEB0AF;
+                    background-color:  $whiteColor;
+                    color: $greyColor;
                     :last-child {
-                        color: #1f1f1f;
+                        color: $textColor;
                         &:hover {
-                            background-color: #F2F2F2;
+                            background-color: $iconHoverColor;
                         }
                     }
                     .left-icon {
@@ -629,10 +649,10 @@ body {
                         .text-tooltip-pagination {
                             font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
                             position: absolute;
-                            background-color: #444746;
+                            background-color: $iconColor;
                             font-size: 0.875rem;
                             padding: 0.313rem 0.5rem;
-                            color: #fff;
+                            color:  $whiteColor;
                             border-radius: 0.313rem;
                             top: 19%;
                             right: 3%;
@@ -648,7 +668,7 @@ body {
                     font-size: 0.625rem;
                     margin-right: 1.875rem;
                     &:hover {
-                        background-color: #F2F2F2;
+                        background-color: $iconHoverColor;
                         border-radius: 0.313rem;
                         .text-tooltip {
                             visibility: visible;
@@ -661,10 +681,10 @@ body {
                     margin-right: 0.875rem;
                     position: relative;
                     font-size: 0.875rem;
-                    color: #444746;
+                    color: $iconColor;
                     margin-right: 1.875rem;
                     &:hover {
-                        background-color: #F2F2F2;
+                        background-color: $iconHoverColor;
                         .text-tooltip {
                             visibility: visible;
                         }
@@ -675,7 +695,7 @@ body {
                     padding: 0.5rem 0.875rem;
                     position: relative;
                     &:hover {
-                        background-color: #F2F2F2;
+                        background-color: $iconHoverColor;
                         .text-tooltip {
                             visibility: visible;
                         }
@@ -690,14 +710,14 @@ body {
                     color: #5e5e5e;
                     width: auto;
                     &:hover {
-                        background-color: #F2F2F2;
+                        background-color: $iconHoverColor;
                         div {
                             visibility: visible;
                         }
                     }
                     .pagination-option {
                         position: absolute;
-                        background-color: #FFF;
+                        background-color:  $whiteColor;
                         width: 150%;
                         text-align: center;
                         left: 0%;
@@ -711,7 +731,7 @@ body {
                             align-items: center;
                             justify-content: center;
                             &:hover {
-                                background-color: #F2F2F2;
+                                background-color: $iconHoverColor;
                             } 
                         }
                         .newest-text {
@@ -724,23 +744,30 @@ body {
                     position: absolute;
                     right: 0%; 
                     top: 100%; 
-                    background-color: #444746;
+                    background-color: $iconColor;
                     font-size: 0.875rem;
                     padding: 0.313rem 0.5rem;
-                    color: #fff;
+                    color:  $whiteColor;
                     border-radius: 0.313rem;
                     visibility: hidden;
                 }
             }
             ul {
+                list-style: none;
+                padding-left: 0rem;
+                margin: 0rem;
+                background-color: #fff;
+                border-radius: 0rem 0rem 1.25rem 1.25rem;
+                overflow: auto;
+                height: 100%;
                 li {
                     width: 99%;
                     height: 1.25rem;
-                    background-color: #F2F6FC;
+                    background-color: $liHoverColor;
                     padding: 0.625rem 0rem;
                     display: flex;
                     align-items: center;
-                    border-bottom: #e1e5e9 solid 1px;
+                    border-bottom: $borderColor solid 1px;
                     border-top : transparent solid 2px;
                     border-left: transparent solid 2px;
                     border-right: transparent solid 2px;
@@ -797,7 +824,7 @@ body {
                             visibility: hidden;
                             width: 0;
                             &:hover {
-                                background-color: #EAEBEF;
+                                background-color: $iconHoverColor;
                             }
                         }
                         .icon-down {
@@ -827,21 +854,19 @@ body {
         }
     }
 }
-#toggleStatus {
-    display: none;
-}
-
-#toggleStatus:checked ~ .status-content {
-    display: block;
-}
-
-#toggleStatus:not(:checked) ~ .status-content {
-    display: none;
-}
+// #toggleStatus {
+//     display: none;
+// }
+// #toggleStatus:checked ~ .status-content {
+//     display: block;
+// }
+// #toggleStatus:not(:checked) ~ .status-content {
+//     display: none;
+// }
 .popover {
     display: none;
 }
-
 .popover.active {
     display: block;
+}
 }
